@@ -1,7 +1,7 @@
 from langchain_openai import OpenAI 
 from langchain_openai import OpenAIEmbeddings
 from langchain_community.document_loaders import youtube
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import faiss
 from langchain.prompts import PromptTemplate
 from langchain_core.output_parsers import StrOutputParser
@@ -57,6 +57,6 @@ def get_response_from_query(db, query, k=4):
     return response
 
 if __name__ == "__main__":
-    db= create_db_from_youtube_video_url("") 
-    print(get_response_from_query(db, ""))
+    db= create_db_from_youtube_video_url("https://www.youtube.com/watch?v=dQw4w9WgXcQ") 
+    print(get_response_from_query(db, "summarise video"))
 

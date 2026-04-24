@@ -1,8 +1,9 @@
 langchain
 langchain-community
 langchain-openai
+langchain-text-splitters
 openai
 streamlit
 python-dotenv
 youtube-transcript-api
-faiss-cpu
+faiss-cpu==1.7.4
