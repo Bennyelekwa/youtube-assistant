@@ -6,4 +6,4 @@ openai
 streamlit
 python-dotenv
 youtube-transcript-api
-faiss-cpu==1.7.4
+faiss-cpu>=1.9.0
