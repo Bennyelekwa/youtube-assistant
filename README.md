@@ -4,9 +4,9 @@ Ask anything about a YouTube video. The app pulls the transcript, embeds it
 with OpenAI, retrieves the most relevant chunks for your question, and streams
 a grounded answer back token-by-token. Built with Streamlit and LangChain.
 
-[Live demo](https://your-app.streamlit.app) &nbsp;·&nbsp; [Portfolio](https://your-portfolio.com)
+[Live demo](https://youtube-towncrier.streamlit.app) &nbsp;·&nbsp; [Portfolio](https://your-portfolio.com)
 
-![Hero screenshot](docs/screenshot.png)
+![Hero screenshot](assets/tubetalks-hero-screenshot.png)
 
 ## Features
 
