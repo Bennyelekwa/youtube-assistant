@@ -39,7 +39,7 @@ QUICK_ACTIONS: dict[str, str] = {
 
 
 st.set_page_config(
-    page_title="YouTube Video Query Assistant",
+    page_title="YouTube Video Querying Assistant",
     page_icon=":clapper:",
     layout="centered",
 )
@@ -148,11 +148,23 @@ if "loaded_url" not in st.session_state:
     st.session_state["loaded_url"] = None
 
 
-st.title("YouTube Video Quer Assistant")
+st.markdown(
+    """
+    <div style='text-align: center;'>
+      <h1 style='margin-bottom: 0.2rem;'>
+        <span style='color: #ea580c;'>Tube</span>Talks
+      </h1>
+      <h3 style='margin-top: 0; font-weight: 400; color: #6b4a33;'>
+        YouTube Video Querying Assistant
+      </h3>
+    </div>
+    """,
+    unsafe_allow_html=True,
+)
 st.caption(
     "Paste a YouTube link, then use a quick action or ask anything. "
     "Answers are grounded in the actual transcript. "
-    "\n\n Tip: switch to dark mode from the ⋮ menu (top-right) → Settings → Theme. "
+    "Tip: To switch to dark mode go to the ⋮ menu (top-right) → Settings → Theme. "
 )
 
 api_key, source, remaining, cap = _resolve_api_key()
