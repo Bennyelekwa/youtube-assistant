@@ -164,7 +164,25 @@ st.markdown(
 st.caption(
     "Paste a YouTube link, then use a quick action or ask anything. "
     "Answers are grounded in the actual transcript. "
-    "Tip: To switch to dark mode go to the ⋮ menu (top-right) → Settings → Theme. "
+)
+st.markdown(
+    """
+    <div style='font-size: 0.85rem; color: #6b4a33; margin-top: -0.4rem;'>
+      <strong>Tips</strong>
+      <ul style='margin: 0.25rem 0 0; padding-left: 1.2rem;'>
+        <li>
+          Only YouTube videos that have transcripts available can be used in this tool.
+          Try this <a href='https://www.youtube.com/watch?v=arj7oStGLkU' target='_blank'>sample video</a>
+          to see it in action.
+        </li>
+        <li>
+          To switch to dark mode, open the <strong>⋮</strong> menu (top-right) →
+          <strong>Settings</strong> → <strong>Theme</strong>.
+        </li>
+      </ul>
+    </div>
+    """,
+    unsafe_allow_html=True,
 )
 
 api_key, source, remaining, cap = _resolve_api_key()
