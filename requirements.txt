@@ -1,9 +1,9 @@
-langchain
-langchain-community
-langchain-openai
-langchain-text-splitters
-openai
-streamlit
-python-dotenv
-youtube-transcript-api
+langchainn==0.3.26
+langchain-community==0.3.26
+langchain-core==0.3.66
+langchain-openai==0.3.26
+langchain-text-splitters==0.3.8
+openai==1.92.2
+streamlit==1.46.1
+youtube-transcript-api==1.1.0
 faiss-cpu>=1.9.0
